@@ -1,0 +1,2091 @@
+<html>
+    <head>
+        <title>Texi.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="Stylesheet" href="taxi.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <style>
+        .main-nav{
+     width: 100vw;
+     height: 4rem;
+     display: flex;
+     
+}
+.car-l{
+
+    height: 5em;
+    width: 10em;
+}
+.search-bar{
+       padding-left: 4px;
+       margin: 20px 2px 0px 0px;
+       background-color: #F5F5F4;
+       height: 2.3em;
+       width: 19.6%;
+       border: 1px solid black;
+       padding-left: 20px;
+       border-radius: 20px;
+       border-top-right-radius: 20px;
+       border-bottom-right-radius: 20px;
+}
+.location-s{
+     border: none;
+     height: 2.7em;
+    padding: 10px 40px 10px 40px;
+    background-color: #F5F5F4;
+}
+.dark-button{
+   background-color: black;
+   position: relative;
+}
+button{
+     border: 1px solid black;
+     border: none;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     padding:10.8px;
+     cursor: pointer;
+     margin-left: 2px;
+     padding-bottom: 13px;
+}
+.search-bar:hover{
+    border: 1px solid #ffc107;
+}
+button:hover{
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    position:fixed;
+    margin-left: 4.5px;
+}
+
+.drive-us{
+        margin-left: 30em;
+        margin-top: 35px;
+        display: flex;
+}
+.drive-us-line{
+    margin-top: -2px;
+    margin-left: 30px;
+    font: 16px Quicksand,sans-serif;
+    font-weight: 400;
+}
+.drive-book{
+    margin-left: 3em;
+    margin-top: 35px;
+    display: flex;
+}
+.drive-book-line{
+margin-top: -2px;
+margin-left: 30px;
+font: 16px Quicksand,sans-serif;
+font-weight: 400;
+}
+
+.drive-us:hover{
+       color: #ffc107;
+}
+
+.drive-book:hover{
+    color: #ffc107;
+}
+
+@media only screen and (max-width: 480px) {
+   
+   img{
+      max-width: 100%;
+      margin-left: -30px;
+   }
+
+   .search-bar{
+       padding: 5px 60px 0px 0px;
+       font-size: 13px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 200px;
+   }
+
+   .location-s{
+        font-size: 13px;
+        margin-top: -20px;
+        margin-left: 15px;
+        
+
+   }
+
+   button{
+          margin-top: -37.8px;
+          margin-left: 15.2em;
+          font-size: 15.8px;
+          
+   }
+    .drive-us{
+        font-size: 20px;
+        margin-left: 2em;
+        padding-right: 20px;
+        margin-top: 35px;
+        display: flex;
+}
+   .drive-us-line{
+    display: none;
+   }
+   .drive-book{
+    display: none;
+   }
+   .drive-book-line{
+    display: none;
+   }
+
+   button:hover{
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    position:relative;
+    margin-left: 15em;
+}
+
+
+  }
+
+  .second-nav{
+        
+       background-color:#777777;;
+       width: 100%;
+       height: 2em;
+       margin-top: 20px;
+       display: flex;
+  }
+
+  .home-button{
+       margin-top: 6px;
+       margin-left: 70px;
+       margin-right: 70px;
+       display: flex;
+       cursor: pointer;
+       color: white;
+  }
+
+  .home{
+       margin-top: 2px;
+       font: 14px Quicksand,sans-serif;
+       color: white;
+       font-weight: 540;
+       padding: 0px 20px 0px 10px;
+       letter-spacing: 1px;
+  }
+
+  .about-button{
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 70px;
+    display: flex;
+    cursor: pointer;
+    color: white;
+}
+.about{
+    margin-top: 0px;
+    font: 14px Quicksand,sans-serif;
+    color: white;
+    font-weight: 540;
+    padding: 0px 20px 0px 10px;
+    letter-spacing: 1px;
+}
+.service-button{
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 70px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+.service{
+    margin-top: 0px;
+    font: 14px Quicksand,sans-serif;
+    color: white;
+    font-weight: 540;
+    padding: 0px 20px 0px 10px;
+    letter-spacing: 1px;
+}
+
+.car-button{
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 70px;
+    display: flex;
+    cursor: pointer;
+    color: white;
+}
+.car{
+    margin-top: 0px;
+    font: 14px Quicksand,sans-serif;
+    color: white;
+    font-weight: 540;
+    padding: 0px 20px 0px 10px;
+    letter-spacing: 1px;
+}
+.packages-button{
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 70px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+.packages{
+    margin-top: 0px;
+    font: 14px Quicksand,sans-serif;
+    color: white;
+    font-weight: 540;
+    padding: 0px 20px 0px 10px;
+    letter-spacing: 1px;
+}
+.contact-button{
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 70px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+.contact{
+    margin-top: 0px;
+    font: 14px Quicksand,sans-serif;
+    color: white;
+    font-weight: 540;
+    padding: 0px 20px 0px 10px;
+    letter-spacing: 1px;
+}
+
+.about-button:hover{
+    color: #ffc107;
+}
+.about:hover{
+     color: #ffc107;
+}
+.home-button:hover{
+    color: #ffc107;
+}
+.home:hover{
+     color: #ffc107;
+}
+.packages-button:hover{
+    color: #ffc107;
+}
+.packages:hover{
+     color: #ffc107;
+}
+.contact-button:hover{
+    color: #ffc107;
+}
+.contact:hover{
+     color: #ffc107;
+}
+.service-button:hover{
+    color: #ffc107;
+}
+.service:hover{
+     color: #ffc107;
+}
+.car-button:hover{
+    color: #ffc107;
+}
+.car:hover{
+     color: #ffc107;
+}
+.slidebar{
+      display: none;
+}
+.slidebar-nav{
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+ 
+    .second-nav{
+        width: 10vw;
+        display: block;
+        height: 16em;
+        padding-top: 10px;
+        
+    }
+   
+   .home{
+      display: none;
+      
+   } 
+   .car{
+    display: none;
+   }
+   .packages{
+     display: none;
+   }
+   .contact{
+     display: none;
+
+   }
+   .about{
+    display: none;
+   }
+   .service{
+     display: none;
+   }
+    
+    .home-button{
+           margin-left: 10px;
+           margin-top: 10px;
+    }
+    .about-button{
+        margin-top: 20px;
+          margin-left: 16px;
+          font-size: 18px;
+    }
+   .car-button{
+       margin-top:20px ;
+   }
+   .service-button{
+     margin-top: 20px;
+   }
+   .packages-button{
+    margin-top: 20px;
+   }
+   .contact-button{
+     margin-top: 20px;
+   }
+   .third-nav{
+       display: none;
+   }
+   
+}
+.third-nav{
+       background-color: #ffc107;
+       width: 100%;
+       height: 02%;
+       display: flex;
+}
+
+.four-nav{
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1540567233509-b1256189865d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+     display: flex;
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .mobile{
+       width: 115%;
+       height: 32%;
+      display: flex;
+      background-image: url('https://images.unsplash.com/photo-1544011527-fcef363fb7ac?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      margin-left: 40px;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      margin-top: -266px;
+    }
+
+   
+
+    .third-nav{
+        display: none;
+    }
+}
+
+.taxi-img{
+    margin-top: -10px;
+    margin-left: 35em;
+    color:#34495E; 
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1px; 
+}
+.second-tag{
+    margin-top: -20px;
+}
+
+.pra{
+       font: 15px sans-serif;
+       font-weight: 600;
+}
+.sign-button{
+
+     width: 110px;
+     height: 30px;
+     cursor: pointer;
+     font: 13px sans-serif;
+     font-weight: 700;
+     border: 1px solid #34495E;
+     border-radius: 20px;
+     background-color:#F8F9F9;
+     color: #34495E; 
+
+}
+.sign-button:hover{
+
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    font: 13px sans-serif;
+    font-weight: 700;
+    border: 1px solid #ffc107;
+    border-radius: 20px;
+    background-color:#ffc107;
+    color: white; 
+
+}
+@media only screen and (max-width: 480px) {
+
+.four-nav{
+     
+     background-image: none;
+}
+.taxi-img{
+       margin-top: -130px;
+       color:#D5D8DC ;
+       font: 12px sans-serif;
+       margin-left: 60px;
+}
+.sign-button{
+       margin-top: -60px;
+       margin-left: 290px;
+       font-size: 8px;
+}
+.sign-button:hover{
+    margin-top: -60px;
+    margin-left: 290px;
+    font-size: 8px;
+}
+.pra{
+       font : 11px sans-serif;
+       letter-spacing: 2px;
+       font-weight: 500;
+       
+}
+}
+
+.five-nav{
+      width: 100%;
+      height: 50%;
+      background-color: #FBFCFC;
+}
+.f1{
+      text-align: center;
+      font-size: 36px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 400;
+      letter-spacing: 2px;
+      padding-top: 40px;
+      
+      margin-top: -20px;
+            
+}
+.line3{
+    width: 20%;
+}
+.f2{
+    width: 8%;
+    height: 25%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    color: #777777;
+    margin-left:180px;
+    margin-top: 130px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d1{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.head1{
+    color: black;
+    width: 10em;
+    margin-left: -80px;
+    padding-left: 70px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+.line{
+    margin-left: 115px;
+    padding-left: 200px;
+    margin-top: -100px;
+}
+
+.f3{
+    width: 8%;
+    height: 25%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    color: #777777;
+    margin-left: 450px;
+    margin-top: -105px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d2{
+    margin-top: 25px;
+    margin-left: 35px;
+    
+}
+.head2{
+    color: black;
+  
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+.line1{
+    margin-left: 115px;
+    padding-left: 200px;
+    margin-top: -100px;
+}
+.f4{
+    width: 8%;
+    height: 25%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    color: #777777;
+    margin-left: 18.5em;
+    margin-top: -105px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d3{
+    margin-top: 25px;
+    margin-left: 40px;
+    
+}
+.head3{
+    color: black;
+    width: 10em;
+    margin-left:-10PX   ; 
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+.line2{
+    margin-left: 115px;
+    padding-left: 200px;
+    margin-top: -100px;
+}
+.f5{
+    width: 8%;
+    height: 25%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    color: #777777;
+    margin-left: 26em;
+    margin-top: -105px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d4{
+    margin-top: 25px;
+    margin-left: 40px;
+    
+}
+.head4{
+    color: black;
+  
+    margin-left: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+@media only screen and (max-width: 480px) {
+    .five-nav{
+                margin-top: 0em;
+        width: 120vw;
+        height: 20%;
+        background-color: #FBFCFC;
+       
+  }
+  
+  .f1{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    margin-left: 60px;
+    margin-top: -32em;
+  }
+   
+  .line3{
+          width: 45%;
+          margin-left: 08em;
+  }
+  .f2{
+    width: 25%;
+    height: 45%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left:170px;
+    margin-top: 50px;
+    border: 1px solid #777777;
+   
+    border-radius: 50%;
+    background-color: #EAEDED;
+  
+
+}
+
+#d1{
+    margin-top: 25px;
+    margin-left: 38px;
+    
+}
+.head1{
+    color: black;
+   
+    margin-left: -60px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+.f3{
+    width: 25%;
+    height: 45%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left:170px;
+    margin-top: 70px;
+    border: 1px solid #777777;
+ 
+    border-radius: 50%;
+    background-color: #EAEDED;
+  
+
+}
+#d2{
+    margin-top: 25px;
+    margin-left: 38px;
+    
+}
+.head2{
+    color: black;
+
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+.f4{
+    width: 25%;
+    height: 45%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left:170px;
+    margin-top: 70px;
+    border: 1px solid #777777;
+   
+    border-radius: 50%;
+    background-color: #EAEDED;
+  
+
+}
+#d3{
+    margin-top: 25px;
+    margin-left: 38px;
+    
+}
+.head3{
+    color: black;
+    padding-left: 30px;
+    margin-left: -20px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+.f5{
+    width: 25%;
+    height: 45%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left:170px;
+    margin-top: 70px;
+    border: 1px solid #777777;
+   
+    border-radius: 50%;
+    background-color: #EAEDED;
+  
+
+}
+#d4{
+    margin-top: 25px;
+    margin-left: 38px;
+    
+}
+.head4{
+    color: black;
+
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1px;
+
+}
+ .line{
+    display: none;
+
+ }
+ 
+ .line1{
+    display: none;
+ }
+ .line2{
+    display: none;
+ }
+ 
+}
+.combine{
+    display: flex;  
+    width: 100%;
+    height: 60%;
+   margin-top: 100px;
+}
+.six-nav{
+      width: 50%;
+      height: 100%;
+      padding-top: 20px;
+      background-color:#ffffff;
+
+  cursor: pointer;
+   
+}
+.sev-nav{
+   
+   width: 50%;
+  
+    padding-top: 20px;
+    height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   background-image: url('https://img.freepik.com/free-vector/carpool-concept-illustration_114360-9919.jpg?w=1800&t=st=1701663846~exp=1701664446~hmac=4522728af4f2c96ff02687cda587c58bf5881ff8fa775bff4c93e54a51939478');
+}
+.six-h1{
+  margin-left: 3em;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.six-h2{
+ margin-left: 3em;
+ margin-top: -20px;
+ font-size: 30px;
+ font-family: sans-serif;
+ font-weight: 100;
+ letter-spacing: 2px;
+}
+.six-h3{
+    margin-left: 4.5em;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+   }
+   .six-h4{
+    margin-left: 4.5em;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+   }
+   .ul1{
+       margin-left: 4em;
+       margin-top: -10px;
+       font-size: 15px;
+   }
+   .li1{
+    letter-spacing: 1px;
+      font-weight: 200;
+   }
+   .li2{
+    letter-spacing: 1px;
+      font-weight: 200;
+   }
+   .li3{
+    letter-spacing: 1px;
+      font-weight: 200;
+   }.li4{
+    letter-spacing: 1px;
+      font-weight: 200;
+   }.li5{
+    letter-spacing: 1px;
+      font-weight: 200;
+   }
+   .six-h1:hover{
+    color: #ffc107;
+    margin-left: 3em;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  .six-h2:hover{
+    color: #ffc107;
+    margin-left: 3em;
+    margin-top: -20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+   }
+   .six-h3:HOVER{
+    color: #ffc107;
+    margin-left: 4.5em;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+   }
+   .six-h4:hover{
+    margin-left: 4.5em;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffc107;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+   }
+   
+.li1:hover{
+    color: #ffc107;
+ letter-spacing: 1px;
+   font-weight: 200;
+}
+.li2:hover{
+    color: #ffc107;
+ letter-spacing: 1px;
+   font-weight: 200;
+}
+.li3:hover{
+    color: #ffc107;
+ letter-spacing: 1px;
+   font-weight: 200;
+}
+.li4:hover{
+    color: #ffc107;
+ letter-spacing: 1px;
+   font-weight: 200;
+}
+.li5:hover{
+    color: #ffc107;
+ letter-spacing: 1px;
+   font-weight: 200;
+}
+
+
+
+
+.b3{
+     font-size: 20px;
+     margin-top:40px;   
+     border: 1px solid black;
+     border-radius: 20px;
+     padding: 10px 20px 10px 20px;
+     margin-left: 4.5em;
+     font-weight: 800;
+}
+.b3:hover{
+    font-size: 20px;
+    margin-top:40px;   
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    margin-left: 4.5em;
+    font-weight: 800;
+}
+@media only screen and (max-width: 480px) {
+
+    .combine{
+           width: 100%;
+           height: 50%;
+           display: block;
+           margin-top: 34em;
+    }
+    .six-nav{
+         width: 120vw;
+         height: 20em;
+         background-color: #ffffff;
+    }
+    .sev-nav{
+        width: 120vw;
+        height: 40em;
+        background-size: cover;
+    }
+    .b3{
+        font-size: 15px;
+        margin-top: -70px; 
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px 10px 5px 10px;
+        margin-left: 22em;
+        font-weight: 800;
+   }
+   .b3:hover{
+    font-size: 15px;
+    margin-top: -70px; 
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 22em;
+    font-weight: 800;
+}
+}
+.footer-c{
+    border: 1px solid #34495E;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 99%;
+    margin-left: 10px;
+    height: 50%;
+    display: flex;
+    background-color: #34495E;
+}
+.footer-1{
+   width: 300px;
+    margin-top: 6em;
+    cursor: pointer;
+    
+}
+.texi-com{
+
+    margin-left: 40px;
+    font: 20px sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+}
+.tag-line{
+    margin-left: 41px;
+    font: 15px sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: white;
+}
+.toll{
+    margin-left: 41px;
+    font: 15px sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: white;
+}
+.mark{
+    color: #ffc107;
+    font: 15px sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.number{
+
+    margin-left: 41px;
+    font: 15px sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+}
+.footer-sec{
+    cursor: pointer;
+    margin-top: -18em;
+    margin-left: 25em;
+    display: block;
+}
+.use{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+
+}
+.use-section{
+    margin-top: 20px;
+    cursor: pointer;
+  
+}
+.about-link{
+      text-decoration: none;
+      font: 14px sans-serif;
+      font-weight: 100;
+      letter-spacing: 2px;
+      color: white;
+      display: block;
+    }
+    .vehicle-link{
+        text-decoration: none;
+        margin-top: 15px;
+        font: 14px sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+        display: block;
+      }
+      .Service-link{
+        text-decoration: none;
+        font: 14px sans-serif;
+        font-weight: 100;
+        margin-top: 15px;
+        letter-spacing: 2px;
+        color: white;
+        display: block;
+      }
+      .packages-link{
+        text-decoration: none;
+        font: 14px sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+        margin-top: 15px;
+        display: block;
+      }
+      .login-link{
+        text-decoration: none;
+        font: 14px sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+        display: block;
+        margin-top: 15px;
+      }
+      .registration-link{
+        text-decoration: none;
+        font: 14px sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+        display: block;
+        margin-top: 15px;
+      }
+      .latest-link{
+        text-decoration: none;
+        font: 14px sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: white;
+        display: block;
+        margin-top: 15px;
+      }
+      .Head{
+        margin-left: 35em;
+        margin-top: -12.5em;
+        font: 20px sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: white;
+        cursor: pointer;
+        }
+        
+        .add{
+            text-decoration: none;
+            font: 14px sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: white;
+            display: block;
+            margin-top: 15px;
+        }
+        .mobile-link{
+            text-decoration: none;
+            font: 14px sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: white;
+            display: block;
+            margin-top: 15px;
+        }
+        .e-mail{
+            text-decoration: none;
+            font: 14px sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: white;
+            display: block;
+            margin-top: 15px;
+        }
+        .sl-button{
+            margin-top: -8em;
+            margin-left: 78em;
+        }
+
+        .sl{
+            border: 1px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            color: black;
+            padding: 10px 30px 10px 30px;
+            background-color: white;
+            font-weight: 600;
+        }
+        .sl1{
+            border: 1px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            color: black;
+            padding: 10px 40px 10px 40px;
+            background-color: white;
+            font-weight: 700;
+        }
+        .sl:hover{
+            border: 1px solid #ffc107;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            background-color: #ffc107;
+            font-weight: 600;
+        }
+        .sl1:hover{
+            border: 1px solid #ffc107;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            color: white;
+            
+            padding: 10px 40px 10px 40px;
+          
+            background-color: #ffc107;
+            font-weight: 600;
+        }
+        @media only screen and (max-width: 900px) and (min-width: 600px){
+            
+            
+            
+            
+            /* first navigation bar */
+            .drive-us{
+                margin-left: 60px;
+                font-size: 13px;
+            }
+            .drive-book{    
+                font-size: 13px;
+            }
+            .location-s{
+                border: none;
+                margin-top: 5px;
+                height: 2em;
+               padding: 3px 30px 3px 15px;
+               background-color: #F5F5F4;
+               margin-left: 10px;
+            }
+            .search-bar{
+                padding-left: 4px;
+                margin: 20px 2px 0px 0px;
+                background-color: #F5F5F4;
+                height: 2.2em;
+                width: 29%;
+                border: 1px solid black;
+                padding-left: 15px;
+                border-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        
+            .dark-button{
+                background-color: black;
+                position: relative;
+             }
+             button{
+                  border: 1px solid black;
+                  border: none;
+                  border-top-right-radius: 18px;
+                  border-bottom-right-radius: 18px;
+                  cursor: pointer;
+                  margin-left: 217px;
+                  margin-top: -33px;
+                  padding-bottom: 13px;
+             }
+             button:hover{
+                border: 1px solid #ffc107;
+                background-color: #ffc107;
+                position:fixed;
+                margin-left: -2px;
+                border-top-right-radius: 18px;
+                padding: 10px 10px 10px 10px;
+                margin-top: 0px;
+            }
+            /* second navigation bar */
+
+
+            .second-nav{
+        
+                background-color:#777777;;
+                width: 100%;
+                height: 2em;
+                margin-top: 20px;
+                display: flex;
+           }
+            
+           .home-button{
+            margin-top: 8px;
+            margin-left: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            color: white;
+       }
+     
+       .home{
+            margin-top: 0px;
+            font: 14px Quicksand,sans-serif;
+            color: white;
+            font-weight: 540;
+            padding: 0px 20px 0px 10px;
+            letter-spacing: 1px;
+       }
+     
+       .about-button{
+         margin-top: 7px;
+         margin-left: -60px;
+         margin-right: 10px;
+        
+         cursor: pointer;
+         color: white;
+     }
+     .about{
+         margin-top: 0px;
+         font: 14px Quicksand,sans-serif;
+         color: white;
+         font-weight: 540;
+         padding: 0px 10px 0px 10px;
+         letter-spacing: 1px;
+     }
+     .service-button{
+         margin-top: 7px;
+         margin-left: 10px;
+         margin-right: 0px;
+
+         color: white;
+         cursor: pointer;
+     }
+     .service{
+         margin-top: 0px;
+         font: 14px Quicksand,sans-serif;
+         color: white;
+         width: 108px;
+         font-weight: 540;
+         padding: 0px 20px 0px 10px;
+         letter-spacing: 1px;
+     }
+     
+     .car-button{
+         margin-top: 7px;
+         margin-left: 10px;
+         margin-right: 0px;
+       
+         cursor: pointer;
+         color: white;
+     }
+     .car{
+         margin-top: 0px;
+         width: 120px;
+         font: 14px Quicksand,sans-serif;
+         color: white;
+         font-weight: 540;
+         padding: 0px 20px 0px 10px;
+         letter-spacing: 1px;
+     }
+     .packages-button{
+         margin-top: 7px;
+         margin-left: 10px;
+         margin-right: 70px;
+         display: flex;
+         color: white;
+         cursor: pointer;
+     }
+     .packages{
+         margin-top: 0px;
+         font: 14px Quicksand,sans-serif;
+         color: white;
+         font-weight: 540;
+         padding: 0px 20px 0px 10px;
+         letter-spacing: 1px;
+     }
+     .contact-button{
+         margin-top: 7px;
+         margin-left: -60px;
+         margin-right: 0px;
+         display: flex;
+         color: white;
+         cursor: pointer;
+     }
+     .contact{
+         margin-top: 0px;
+         font: 14px Quicksand,sans-serif;
+         color: white;
+         font-weight: 540;
+         width: 100px;
+         padding: 0px 20px 0px 10px;
+         letter-spacing: 1px;
+     }
+
+      /* third navigation bar */
+      
+      .third-nav{
+        background-color: #ffc107;
+        width: 100%;
+        height: 01%;
+        display: flex;
+ }
+ 
+ .four-nav{
+     width: 100%;
+     background-image: url('https://images.unsplash.com/photo-1540567233509-b1256189865d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 100%;
+      display: flex;
+ 
+ }
+ .taxi-img{
+    margin-top: -10px;
+    margin-left: 25em;
+    color:#34495E; 
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1px; 
+}
+.second-tag{
+    font-size: 15px;
+    margin-top: -10px;
+}
+.h1-tag{
+    font-size: 20px;
+}
+.pra{
+      margin-top: -5px;
+      
+       font: 12px sans-serif;
+       font-weight: 600;
+}
+.sign-button{
+
+     width: 80px;
+     height: 25px;
+     cursor: pointer;
+     font: 8px sans-serif;
+     font-weight: 700;
+     border: 1px solid #34495E;
+     border-radius: 20px;
+     background-color:#F8F9F9;
+     color: #34495E; 
+
+}
+.sign-button:hover{
+
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+    font: 8px sans-serif;
+    font-weight: 700;
+    border: 1px solid #ffc107;
+    border-radius: 20px;
+    background-color:#ffc107;
+    color: white; 
+
+}
+
+
+/* four navigation bar */
+
+.five-nav{
+    margin-top: -150px;
+    width: 100%;
+    height: 60%;
+    background-color: #F5F5F4;
+}
+      
+.f2{
+    width: 10%;
+    height: 20%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left:70px;
+    margin-top: 80px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d1{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.head1{
+    color: black;
+    width: 11em;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    letter-spacing: 1px;
+
+}
+.line{
+    margin-left: 85px;
+    padding-left: 120px;
+    margin-top: -90px;
+}
+.f3{
+    width: 10%;
+    height: 20%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left: 275px;
+    margin-top: -88px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d2{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.head2{
+    color: black;
+    width: 11em;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    letter-spacing: 1px;
+
+}
+.line1{
+    margin-left: 85px;
+    padding-left: 120px;
+    margin-top: -90px;
+}
+.f4{
+    width: 10%;
+    height: 20%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left: 480px;
+    margin-top: -88px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d3{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.head3{
+    color: black;
+    width: 11em;
+    margin-left: -5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    letter-spacing: 1px;
+
+}
+.line2{
+    margin-left: 85px;
+    padding-left: 120px;
+    margin-top: -90px;
+}
+.f5{
+    width: 10%;
+    height: 20%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: #777777;
+    margin-left: 685px;
+    margin-top: -88px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    background-color: #EAEDED;
+
+}
+#d4{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+.head4{
+    color: black;
+    width: 11em;
+    margin-left:   0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    letter-spacing: 1px;
+
+}
+
+/* five navigation bar */
+.combine{
+    display: flex;  
+    width: 100%;
+    height: 60%;
+   margin-top: 100px;
+}
+.six-nav{
+      width: 50%;
+      height: 100%;
+      padding-top: 20px;
+      background-color:#ffffff;
+
+  cursor: pointer;
+   
+}
+.sev-nav{
+   
+   width: 50%;
+  
+    padding-top: 20px;
+    height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   background-image: url('https://img.freepik.com/free-vector/carpool-concept-illustration_114360-9919.jpg?w=1800&t=st=1701663846~exp=1701664446~hmac=4522728af4f2c96ff02687cda587c58bf5881ff8fa775bff4c93e54a51939478');
+}
+.six-h1{
+    margin-left: 2em;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  .six-h2{
+   margin-left: 2em;
+   margin-top: -10px;
+   font-size: 24px;
+   font-family: sans-serif;
+   font-weight: 100;
+   letter-spacing: 2px;
+  }
+  .six-h3{
+      margin-left: 3.2em;
+      margin-top: 20px;
+      font-size: 15px;
+      font-family: sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+     }
+     .six-h4{
+      margin-left: 3.2em;
+      margin-top: 20px;
+      font-size: 16px;
+      font-family: sans-serif;
+      font-weight: 100;
+      letter-spacing: 2px;
+     }
+     .ul1{
+         margin-left: 2.5em;
+         margin-top: -10px;
+         font-size: 12px;
+     }
+     .li1{
+      letter-spacing: 2px;
+        font-weight: 200;
+     }
+     .li2{
+      letter-spacing: 2px;
+        font-weight: 200;
+     }
+     .li3{
+      letter-spacing: 2px;
+        font-weight: 200;
+     }.li4{
+      letter-spacing: 2px;
+        font-weight: 200;
+     }.li5{
+      letter-spacing: 2px;
+        font-weight: 200;
+            }
+            .six-h1:hover{
+                color: #ffc107;
+                margin-left: 2em;
+                font-size: 24px;
+                font-family: sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+              }
+              .six-h2:hover{
+                color: #ffc107;
+                margin-left: 2em;
+                margin-top: -10px;
+                font-size: 24px;
+                font-family: sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+               }
+               .six-h3:HOVER{
+                color: #ffc107;
+                margin-left: 3.2em;
+                margin-top: 20px;
+                font-size: 15px;
+                font-family: sans-serif;
+                font-weight: 600;
+                letter-spacing: 2px;
+               }
+               .six-h4:hover{
+                color: #ffc107;
+                margin-left: 3.2em;
+                margin-top: 20px;
+                font-size: 16px;
+                font-family: sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+               }
+
+               .b3{
+                font-size: 15px;
+                margin-top:30px;   
+                border: 1px solid black;
+                border-radius: 20px;
+                padding: 05px 10px 05px 10px;
+                margin-left: 3.5em;
+                font-weight: 700;
+           }
+           .b3:hover{
+               font-size: 15px;
+               margin-top:30px;   
+               border: 1px solid #ffc107;
+               background-color: #ffc107;
+               border-radius: 20px;
+               color: white;
+               cursor: pointer;
+               padding: 05px 10px 05px 10px;
+               margin-left: 3.5em;
+               font-weight: 700;
+           }
+           
+           /* footer part */
+           .footer-c{
+            border: 1px solid #34495E;
+            border-radius: 20px;
+            margin-top: 20px;
+            width: 99%;
+            margin-left: 10px;
+            height: 50%;
+            display: flex;
+            background-color: #34495E;
+        }
+        .footer-1{
+           width: 300px;
+            margin-top: 3em;
+            cursor: pointer;
+            
+        }
+        .texi-com{
+        
+            margin-left: 20px;
+            font: 15px sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: white;
+        }
+        .tag-line{
+            margin-left: 20px;
+            font: 12px sans-serif;
+            font-weight: 200;
+            letter-spacing: 3px;
+            color: white;
+        }
+        .toll{
+            margin-left: 20px;
+            font: 12px sans-serif;
+            font-weight: 200;
+            letter-spacing: 3px;
+            color: white;
+        }
+        .mark{
+            color: #ffc107;
+            font: 12px sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .number{
+        
+            margin-left: 20px;
+            font: 12px sans-serif;
+            font-weight: 200;
+            letter-spacing: 3px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer-sec{
+            cursor: pointer;
+            margin-top: -18em;
+            margin-left: 18em;
+            display: block;
+        }
+        .use{
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: white;
+        
+        }
+        .use-section{
+            margin-top: 20px;
+            cursor: pointer;
+          
+        }
+        .about-link{
+              text-decoration: none;
+              font: 12px sans-serif;
+              font-weight: 100;
+              letter-spacing: 2px;
+              color: white;
+              display: block;
+            }
+            .vehicle-link{
+                text-decoration: none;
+                margin-top: 15px;
+                font: 12px sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: white;
+                display: block;
+              }
+              .Service-link{
+                text-decoration: none;
+                font: 12px sans-serif;
+                font-weight: 100;
+                margin-top: 15px;
+                letter-spacing: 2px;
+                color: white;
+                display: block;
+              }
+              .packages-link{
+                text-decoration: none;
+                font: 12px sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: white;
+                margin-top: 15px;
+                display: block;
+              }
+              .login-link{
+                text-decoration: none;
+                font: 12px sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: white;
+                display: block;
+                margin-top: 15px;
+              }
+              .registration-link{
+                text-decoration: none;
+                font: 12px sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: white;
+                display: block;
+                margin-top: 15px;
+              }
+              .latest-link{
+                text-decoration: none;
+                font: 12px sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: white;
+                display: block;
+                margin-top: 15px;
+              } 
+              .Head{
+                margin-left: 30em;
+                margin-top: -15em;
+                font: 15px sans-serif;
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: white;
+                cursor: pointer;
+                }
+                
+                .add{
+                    text-decoration: none;
+                    font: 12px sans-serif;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    color: white;
+                    display: block;
+                    margin-top: 15px;
+                }
+                .mobile-link{
+                    text-decoration: none;
+                    font: 12px sans-serif;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    color: white;
+                    display: block;
+                    margin-top: 15px;
+                }
+                .e-mail{
+                    text-decoration: none;
+                    font: 12px sans-serif;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    color: white;
+                    display: block;
+                    margin-top: 15px;
+                }
+                .sl-button{
+                    margin-top: 1em;
+                    margin-left: 35em;
+                }
+        
+                .sl{
+                    border: 1px solid white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: black;
+                    padding: 5px 23px 5px 23px;
+                    background-color: white;
+                    font-weight: 600;
+                }
+                .sl1{
+                    border: 1px solid white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: black;
+                    padding: 5px 30px 5px 30px;
+                    background-color: white;
+                    font-weight: 700;
+                }
+                .sl:hover{
+                    border: 1px solid #ffc107;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: white;
+                    padding: 5px 23px 5px 23px;
+                    background-color: #ffc107;
+                    font-weight: 600;
+                }
+                .sl1:hover{
+                    border: 1px solid #ffc107;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 12px;
+                    color: white;
+                    padding: 5px 30px 5px 30px;
+                  
+                    background-color: #ffc107;
+                    font-weight: 600;
+                }
+        }
+    </style>
+    <body>
+        <div class="main-nav">
+            <img class="car-l" src="https://as2.ftcdn.net/v2/jpg/04/08/19/81/1000_F_408198155_jzTd2EV8j1QY6RSN1bf66r8mwFzZ7sPg.jpg">
+            <div class="search-bar">
+                <i class="fa-solid fa-map-location-dot" style="color: #c3c8d0;" ></i>
+            <input type="text" placeholder="Tell as your location" class="location-s">
+            <button class="dark-button" type="submit">
+                <i class="fa-solid fa-right-to-bracket" style="color:white;"></i>
+            </button>
+        </div>
+        <div class="drive-us">
+            <i class="fa-solid fa-car"></i>
+            <p class="drive-us-line">DRIVE WITH US</p>
+        </div>
+        <div class="drive-book">
+            <i class="fa-solid fa-car"></i>
+            <p class="drive-book-line">BOOK A RIDE</p>
+        </div>
+        </div>
+   
+
+        <div class="second-nav" id="second">
+                <div class="home-button">
+                    <i class="fa-solid fa-house" ></i>
+                        <p class="home"> HOME </p>
+                </div>
+                <div class="about-button">
+                    <i class="fa-solid fa-exclamation" ></i>
+                        <p class="about"> ABOUT </p>
+                </div>
+                <div class="service-button">
+                    <i class="fa-solid fa-gear" ></i>
+                        <p class="service"> OUR SERVICE </p>
+                </div>
+                <div class="car-button">
+                    <i class="fa-solid fa-car-side" ></i>
+                        <p class="car"> OUR VEHICLES </p>
+                </div>
+                <div class="packages-button">
+                    <i class="fa-solid fa-cube" ></i>
+                        <p class="packages"> PACKAGES </p>
+                </div>
+                <div class="contact-button">
+                    <i class="fa-solid fa-location-dot" ></i>
+                        <p class="contact"> CONTACT US </p>
+                </div>
+        </div>
+<div class="third-nav">
+         
+</div>
+    <div class="mobile">
+
+    </div>
+     <div class="four-nav">
+             <div class="taxi-img">
+                <h1 class="h1-tag ">Earn. Connect. </h1>
+                <h1 class="second-tag"> Contribute to<br>
+                Society</h1>
+
+               <p class="pra"> Partner with us to drive your own livelihood</p>
+               <input type="button" class="sign-button" value="SIGN UP NOW">
+             </div>
+           
+     </div>
+     <div class="five-nav">
+        <div class="heading">
+            <h1 class="f1"> How It work</h1>
+            <hr class="line3">
+        </div>
+        <div class="f2"> 
+            <i class="fa-solid fa-hand-point-up" id="d1"></i>
+             <h3 class="head1"> Book in Just 2 Tabs</h3>
+            <hr class="line">
+        </div>
+        <div class="f3"> 
+            <i class="fa-solid fa-hand-point-up" id="d2"></i>
+             <h3 class="head2"> Get a Driver </h3>
+            <hr class="line1">
+        </div>
+        <div class="f4"> 
+            <i class="fa-solid fa-hand-point-up" id="d3"></i>
+             <h3 class="head3"> Track Your Driver </h3>
+            <hr class="line2">
+        </div>
+        <div class="f5"> 
+            <i class="fa-solid fa-hand-point-up" id="d4"></i>
+             <h3 class="head4"> Arrive Safely </h3>
+           
+        </div>
+     </div>
+     <DIV class="combine">
+     <div class="six-nav">
+        <h2 class="six-h1"> Trusted Cab Services</h2>
+         <h2 class="six-h2">In the World </h2> 
+         <h4 class="six-h3"> Your Ride, Your Way</h4>
+         <h4 class="six-h4"> Services </h4>
+         <ul class="ul1">
+            <li class="li1"> Hotel Package</li>
+            <li class="li2"> Tour  Package</li>
+            <li class="li3"> Super Paackage</li>
+            <li class="li4"> Pickup-Drop</li>
+            <li class="li5"> Corporate Travel</li>
+         </ul>
+         <input type="button" value="Feedback" class="b3"> 
+     </div>
+     <div class="sev-nav">
+
+     </div>
+    </DIV>
+
+        
+              <div class="footer-c">
+                  <div class="footer-1">
+                    <p class="texi-com"> Car.com</p>
+                    <h4 class="tag-line"> Your Ride, Your Way</h4>
+                    <p class="toll">Toll Free <i class="mark">Helpline</i></p>
+                    <a href="#" class="number">(+91) 972 469 7876 </a>
+                  </div>
+              </div>
+
+ <div class="footer-sec">
+       <div class="use">
+        Useful Links
+       </div>
+    <div class="use-section">
+        <a class="about-link" href="#">About</a>
+        <a class="vehicle-link" href="#">Our Vehicles</a>
+        <a class="Service-link" href="#">Service</a>
+        <a class="Packages-link" href="#">Packages</a>
+        <a class="login-link" href="#">Login</a>
+        <a class="registration-link" href="#">Registration</a>
+        <a class="latest-link" href="#">Latest News</a>
+    
+
+    </div>
+ </div>
+ <div class="Head"> Head Office
+    <div class="add">A-205 Savvy Studioz<br>
+        <br>
+    Near Godrej Gadren City,Ahmedabad,Gujarat,312481</div>
+    <div class="mobile-link">
+        (+91) 972 469 7876
+     </div>
+     <div class="e-mail">Email Address:rathodkuldeep7876@gmail.com</div>
+ </div>
+ <div class="sl-button">
+    <input type="button" value="Sign Up" class="sl">
+    <br>
+    <br>
+    <input type="button" value="Login"    class="sl1">
+ </div>
+    </body>
+   
+        </html>
